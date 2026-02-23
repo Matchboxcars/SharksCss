@@ -1,0 +1,257 @@
+/*
+Free to use CSS template by Katie (#106445).
+This code may be altered, edited, or re-uploaded. 
+This template may be used to create paid codes (pre-mades and commissions).
+Please do NOT remove this credit, unless your coding becomes unrecognizable from this one! 
+*/
+
+
+/* IMPORT FONT (Replace URL) */
+@import url('FONT URL HERE');
+
+
+/* BACKGROUND */
+
+body {
+    background: url('BACKGROUND IMAGE URL HERE') center center fixed;
+    background-size: cover;
+    font-family: 'FONT NAME HERE', serif;
+    color: #d8d6d2;
+}
+
+
+/* MAIN PANELS */
+
+.container.main,
+.topbar,
+.navbar,
+.breadcrumb,
+.panel,
+.alert,
+.alert-warning,
+.alert-danger,
+.table,
+.feature,
+.item,
+.item-header,
+.cave-grid,
+.mound-grid {
+    background: rgba(10, 10, 10, 0.85) !important;
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    color: #d8d6d2 !important;
+}
+
+
+/* NAVBAR TEXT */
+
+.navbar li a {
+    color: #b3002d !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar li a:hover {
+    background: rgba(40, 0, 10, 0.8) !important;
+    color: #ffffff !important;
+}
+
+
+/* HEADERS */
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    color: #b3002d;
+    text-shadow: 0 0 10px #40000a;
+}
+
+h2 {
+    text-align: center;
+    color: #a10026;
+}
+
+h3 {
+    color: #c2bfb8 !important;
+}
+
+
+/* LINKS */
+
+a:link,
+a:visited {
+    color: #b3002d !important;
+}
+
+a:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 6px #b3002d;
+}
+
+
+/* INNER TABLE LABELS (Level, Stats, etc.) */
+
+.inner-table .left {
+    background: rgba(60, 0, 15, 0.8) !important;
+    color: #ffffff !important;
+}
+
+.inner-table .right {
+    background: rgba(20, 20, 20, 0.6) !important;
+}
+
+
+/* ENERGY BAR */
+
+.progress {
+    background: #1a0005 !important;
+}
+
+.progress-bar {
+    background: #8b0000 !important;
+}
+
+
+/* INPUT FIELDS */
+
+input,
+select,
+textarea {
+    background: rgba(20, 20, 20, 0.9) !important;
+    border: 1px solid #600015 !important;
+    color: #d8d6d2 !important;
+}
+
+
+/* BUTTONS */
+
+button.button,
+input.floatright {
+    background: #1a0005 !important;
+    border: 1px solid #8b0000 !important;
+    color: #d8d6d2 !important;
+}
+
+button.button:hover,
+input.floatright:hover {
+    background: #40000a !important;
+    color: #ffffff !important;
+}
+
+
+/* CUSTOM CONTENT BOXES */
+
+.boxcontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.smallbox,
+.mediumbox,
+.largebox {
+    background: rgba(15, 15, 15, 0.9);
+    border: 1px solid #600015;
+    color: #d8d6d2;
+    padding: 15px;
+    margin: 10px;
+    overflow: auto;
+}
+
+.smallbox { width: 28%; height: 160px; }
+.mediumbox { width: 45%; height: 160px; }
+.largebox { width: 90%; height: 160px; }
+
+
+/* HOVER BOXES */
+
+.smallhoverbox,
+.mediumhoverbox,
+.largehoverbox {
+    background: rgba(15, 15, 15, 0.9);
+    border: 1px solid #600015;
+    color: #d8d6d2;
+    padding: 15px;
+    margin: 10px;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.smallhoverbox { width: 28%; height: 50px; }
+.smallhoverbox:hover { height: 160px; }
+
+.mediumhoverbox { width: 45%; height: 50px; }
+.mediumhoverbox:hover { height: 160px; }
+
+.largehoverbox { width: 90%; height: 50px; }
+.largehoverbox:hover { height: 160px; }
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8b0000;
+}
+
+
+/* CIRCULAR LION + AVATAR */
+
+div#lion_image,
+table#player img {
+    border-radius: 50% !important;
+    overflow: hidden;
+}
+
+
+/* LOGO REPLACER */
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+    content: url('LOGO IMAGE URL HERE');
+}
+
+
+/* CAVE / MOUND IMAGE REPLACERS */
+
+div.cave-grid>img {
+    content: url('IMAGE URL HERE') !important;
+}
+
+a[href$="CAVE ID"]>div.cave-grid>img {
+    content: url('IMAGE URL HERE') !important;
+}
+
+a[href$="lionoverview.php?id=PLAYER ID"]>div.cave-grid>img {
+    content: url('IMAGE URL HERE') !important;
+}
+
+a[href$="unsorted.php?id=PLAYER ID"]>div.cave-grid>img {
+    content: url('IMAGE URL HERE') !important;
+}
+
+.mound-grid img {
+    background: url("IMAGE URL HERE");
+    width: 0;
+    height: 0;
+    padding-top: 80px;
+    padding-right: 130px;
+}
+
+
+/* CREDIT TEXT */
+
+.breadcrumb::after {
+    content: "Template by Katie (#106445) Coded by Matchbox (243004)";
+    color: #600015;
+    position: absolute;
+    right: 13%;
+    z-index: 100;
+}
