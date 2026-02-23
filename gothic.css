@@ -9,7 +9,7 @@ Colors restored: black, dark gray, blue accents, subtle red
 
 /* BACKGROUND */
 body, .container.main {
-    background: url('https://i.pinimg.com/736x/4c/b2/f7/4cb2f7d91ffe878973cc54a022941aa5.jpg') center center fixed !important;
+    background: url('https://i.pinimg.com/736x/3d/c8/0a/3dc80a3582573db2677c5c1f77c14c8d.jpg') center center fixed !important;
     background-size: cover !important;
     font-family: 'God of War';
     color: #2e2a2b; /* dark gray text */
@@ -177,14 +177,14 @@ div#lion_image { margin-top:15px; margin-left:12px; }
 
 /* LIODEN LOGO REPLACER */
 div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
-    content:url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d6c1114a-253a-46f4-a47d-91a17eac9a2c/dbdct2f-ca575d34-fe6a-4590-9c28-fd99b57b5932.gif');
+    content:url('https://th.bing.com/th/id/R.dee4bf3dbddfde6710776af78fba840d?rik=lNza%2bmqy2cNKzA&pid=ImgRaw&r=0');
 }
 
 /* CAVE / MOUND IMAGES - placeholders */
 div.cave-grid>img, a[href$="CAVE ID"]>div.cave-grid>img,
 a[href$="lionoverview.php?id=PLAYER ID"]>div.cave-grid>img,
 a[href$="unsorted.php?id=PLAYER ID"]>div.cave-grid>img {
-    content:url('IMAGE URL') !important;
+    content:url('MOUND IMAGE ') !important;
 }
 .mound-grid img { background:url("IMAGE URL"); width:0; height:0; padding-top:80px; padding-right:130px; }
 
