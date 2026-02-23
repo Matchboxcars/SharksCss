@@ -66,7 +66,9 @@ div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
     display:block;
     width:auto;
     height:50px;
-    content:url('Logo replacer');
+    content:url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e16597c3-a652-4a86-afcf-4c86f8cb5784/dljaqd3-442342d6-7eb9-4e4c-82d6-4c45e1aca62b.jpg/v1/fill/w_150,h_135,q_75,strp/cdc98f2e22458edeb94c259daff3cf52_by_shark_hound_dljaqd3-fullview.jpg?token
+        =eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM1IiwicGF0aCI6Ii9mL2UxNjU5N2MzLWE2NTItNGE4Ni1hZmNmLTRjODZmOGNiNTc4NC9kbGphcWQzLTQ0MjM0MmQ2LTd
+        lYjktNGU0Yy04MmQ2LTRjNDVlMWFjYTYyYi5qcGciLCJ3aWR0aCI6Ijw9MTUwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Msavzjjox_bdpmauA3tf_u1cx3i32BM2OtgNJLVtXlo');
 }
 
 /* EVERYTHING ELSE: keep original first CSS layout with panels, boxes, hover effects, alerts, energy bars, etc. */
