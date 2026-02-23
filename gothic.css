@@ -6,6 +6,25 @@
 /* FONT */
 @import url('FONT URL'); /* God of War */
 
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+    background: rgba(255, 255, 255, 0.6) !important;
+    border: none;
+    border-radius: 0px;
+}
+.breadcrumb .active {
+    color: #000000;
+}
+.breadcrumb::after {
+    content: "Template by Katie (#106445) Coded by Matchbox (243004)";
+    color: #000000;
+    position: absolute;
+    right: 13%;
+    z-index: 100;
+}
+
 /* BACKGROUND */
 body, .container.main {
     background: url('https://i.pinimg.com/1200x/48/1c/ef/481cefd83c3160d8de948dd2e37f8f2b.jpg') center center fixed !important;
@@ -82,7 +101,7 @@ div#chatMessageContainer textarea {
 .s-chat-message:nth-child(odd),
 .s-chat-message__pinned {
     background: rgba(255, 255, 255, 0.7) !important;
-    color: #000000 !important;
+    color: #5d5555 !important;
     border: none !important;
 }
 .s-chat-message_timestamp { color: #000000 !important; }
