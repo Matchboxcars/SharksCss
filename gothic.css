@@ -71,6 +71,29 @@ div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
         lYjktNGU0Yy04MmQ2LTRjNDVlMWFjYTYyYi5qcGciLCJ3aWR0aCI6Ijw9MTUwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Msavzjjox_bdpmauA3tf_u1cx3i32BM2OtgNJLVtXlo');
 }
 
+/* ==================== */
+/* Chat box text readability (dark font on light background) */
+/* ==================== */
+
+.s-chat-message:nth-child(even),
+.s-chat-message:nth-child(odd),
+.s-chat-message__pinned {
+    background: #ffffff !important;  /* Keep white background for readability */
+    color: #000022 !important;       /* Dark blue text for Gothic theme */
+    border: 1px solid #5555aa !important;  /* Optional subtle border */
+}
+
+.s-chat-message_timestamp {
+    color: #000000 !important;       /* Timestamps in black for readability */
+}
+
+/* Chat input box (where you type) */
+div#chatMessageContainer input,
+div#chatMessageContainer textarea {
+    background: rgba(0,0,0,0.5) !important; /* Gothic semi-transparent input */
+    color: #eeeeee !important;              /* Light gray text inside input */
+}
+
 /* EVERYTHING ELSE: keep original first CSS layout with panels, boxes, hover effects, alerts, energy bars, etc. */
 /* Make all backgrounds semi-transparent black: rgba(0,0,0,0.5) */
 /* Make all text light gray (#eeeeee) except main headers and secondary headers as above */
