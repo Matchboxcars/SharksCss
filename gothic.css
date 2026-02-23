@@ -9,7 +9,7 @@ Please do NOT remove this credit, unless your coding becomes unrecognizable from
 @import url('FONT URL'); /* Replace with your font URL */
 
 /* BACKGROUND */
-body {
+body, .container.main {
     background: url('https://tse2.mm.bing.net/th/id/OIP.YVVhBYwtJ1V_9HhjTOKEfgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3') center center fixed;
     background-size: cover;
     font-family: 'God of War';
@@ -19,6 +19,14 @@ body {
 /* CURSOR */
 body, button, input, textarea, select {
     cursor: url('data:image/svg+xml;utf8,<svg fill="black" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 0,24 6,18 12,24 24,0"/></svg>'), auto;
+}
+
+/* LIODEN LOGO REPLACER */
+div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
+    display: block;
+    width: auto;
+    height: 50px; /* adjust if needed */
+    content: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d6c1114a-253a-46f4-a47d-91a17eac9a2c/dbdct2f-ca575d34-fe6a-4590-9c28-fd99b57b5932.gif');
 }
 
 /* MAIN PANEL */
@@ -493,11 +501,6 @@ div#lion_image {
 table#player img {
     border-radius: 50% !important;
     overflow: hidden;
-}
-
-/* LIODEN LOGO REPLACER */
-div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
-    content: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d6c1114a-253a-46f4-a47d-91a17eac9a2c/dbdct2f-ca575d34-fe6a-4590-9c28-fd99b57b5932.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9kNmMxMTE0YS0yNTNhLTQ2ZjQtYTQ3ZC05MWExN2VhYzlhMmMvZGJkY3QyZi1jYTU3NWQzNC1mZTZhLTQ1OTAtOWMyOC1mZDk5YjU3YjU5MzIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.55GMrXZx-7noT9k3JLJBPCXiiS78iZQhS5oxQBRzTg0');
 }
 
 /* CAVE / MOUND IMAGES */
