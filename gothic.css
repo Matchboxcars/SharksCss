@@ -16,7 +16,7 @@ body, .container.main {
 
 /* CURSOR */
 body, button, input, textarea, select {
-    cursor: url('CURSOR REPLACEMENT'), auto;
+    cursor: url('https://www.cursor.cc/cursor/220/26/cursor.png'), auto;
 }
 
 /* PANELS */
@@ -66,9 +66,7 @@ div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
     display:block;
     width:auto;
     height:50px;
-    content:url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e16597c3-a652-4a86-afcf-4c86f8cb5784/dljaqd3-442342d6-7eb9-4e4c-82d6-4c45e1aca62b.jpg/v1/fill/w_150,h_135,q_75,strp/cdc98f2e22458edeb94c259daff3cf52_by_shark_hound_dljaqd3-fullview.jpg?token
-        =eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM1IiwicGF0aCI6Ii9mL2UxNjU5N2MzLWE2NTItNGE4Ni1hZmNmLTRjODZmOGNiNTc4NC9kbGphcWQzLTQ0MjM0MmQ2LTd
-        lYjktNGU0Yy04MmQ2LTRjNDVlMWFjYTYyYi5qcGciLCJ3aWR0aCI6Ijw9MTUwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Msavzjjox_bdpmauA3tf_u1cx3i32BM2OtgNJLVtXlo');
+    content:url('https://www.cursor.cc/cursor/220/26/cursor.png');
 }
 
 /* ==================== */
@@ -94,6 +92,23 @@ div#chatMessageContainer textarea {
     color: #eeeeee !important;              /* Light gray text inside input */
 }
 
+/* CAVE / MOUND */
+.mound-grid img {
+    background: url('cave replacer');
+    width: 0;
+    height: 0;
+    padding-top: 80px;
+    padding-right: 130px;
+}
+div.cave-grid>img {
+    content: url('https://i.pinimg.com/1200x/ed/5d/18/ed5d18e15558e6187d9e31095d03cc76.jpg') !important;
+}
+/* Unsorted, Pregnant Lionesses, Pride Overview */
+a[href$="unsorted.php?id=PLAYER ID"]>div.cave-grid>img,
+a[href$="lionoverview.php?id=PLAYER ID"]>div.cave-grid>img,
+div.cave-grid>img /* Pregnant Lionesses */ {
+    background: #d3d3d3;
+}
 /* EVERYTHING ELSE: keep original first CSS layout with panels, boxes, hover effects, alerts, energy bars, etc. */
 /* Make all backgrounds semi-transparent black: rgba(0,0,0,0.5) */
 /* Make all text light gray (#eeeeee) except main headers and secondary headers as above */
