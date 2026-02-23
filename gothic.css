@@ -5,253 +5,581 @@ This template may be used to create paid codes (pre-mades and commissions).
 Please do NOT remove this credit, unless your coding becomes unrecognizable from this one! 
 */
 
-
-/* IMPORT FONT (Replace URL) */
-@import url('FONT URL HERE');
-
+/* FONT (god of war) */
+@import url('FONT URL'); /* Replace with your font URL */
 
 /* BACKGROUND */
-
 body {
-    background: url('BACKGROUND IMAGE URL HERE') center center fixed;
+    background: url('https://tse2.mm.bing.net/th/id/OIP.YVVhBYwtJ1V_9HhjTOKEfgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3') center center fixed;
     background-size: cover;
-    font-family: 'FONT NAME HERE', serif;
-    color: #d8d6d2;
+    font-family: 'God of War';
+    color: #2e2a2b;
 }
 
+/* CURSOR */
+body, button, input, textarea, select {
+    cursor: url('data:image/svg+xml;utf8,<svg fill="black" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 0,24 6,18 12,24 24,0"/></svg>'), auto;
+}
 
-/* MAIN PANELS */
+/* MAIN PANEL */
 
-.container.main,
-.topbar,
-.navbar,
-.breadcrumb,
-.panel,
+/* RIGHT SIDE */
+.container.main {
+    background: rgba(1, 1, 1, 0.5);
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+/* LEFT SIDE */
+.col-md-9 {
+    background: none;
+    border-right: none;
+}
+
+/* TOPBAR ("Welcome back, ___") */
+.topbar {
+    background: rgba(1, 1, 1, 0.5);
+    border: none;
+    border-top: none;
+    color: #000000;
+    border-radius: 0px;
+}
+
+/* NAVBAR (Den/Crossroads/Etc.) */
+.navbar {
+    background: rgba(1, 1, 1, 0.5);
+    border-bottom: none;
+    color: #000000;
+    border-radius: 0px;
+}
+
+/* NAVBAR BUTTON TEXT COLOR */
+.navbar li a {
+    color: #000000 !important;
+}
+
+/* NAVBAR BUTTON HOVER */
+.navbar li a:hover {
+    background: rgba(1, 1, 1, 0.5) !important;
+    border-bottom: none;
+    color: #000000 !important;
+    border-radius: 0px;
+}
+
+/* BREADCRUMB (Home / Den) */
+.breadcrumb {
+    background: rgba(1, 1, 1, 0.5) !important;
+    border: none;
+    border-radius: 0px;
+}
+
+/* BREADCRUMB TEXT */
+.breadcrumb .active {
+    color: #000000;
+}
+
+/* CSS CREDIT */
+.breadcrumb::after {
+    content: "Template by Katie (#106445) Coded by Matchbox (243004)";
+    color: #000000;
+    position: absolute;
+    right: 13%; /* (This may need adjusting) */
+    z-index: 100;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .breadcrumb::after {
+        right: 20%;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .breadcrumb::after {
+        right: 20%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .breadcrumb::after {
+        right: 22%;
+    }
+}
+
+/* BOOKMARK BUTTON */
+input.floatright, input.floatright:hover {
+    background: rgba(1, 1, 1, 0.5) !important;
+    border: none !important;
+    border-radius: 0px;
+    color: #000000 !important;    
+}
+
+/* SWITCH ACCOUNT BUTTON */
+button.button, button.button:hover {
+    background: rgba(1, 1, 1, 0.5);
+    border: none !important;
+    border-radius: 0px;
+    text-shadow: none !important;
+    color: #000000 !important;
+}
+
+/* ALERTS (ie. "Your lionesses have returned from hunting!") */
 .alert,
 .alert-warning,
-.alert-danger,
-.table,
-.feature,
-.item,
-.item-header,
+.alert-danger {
+    background: rgba(1, 1, 1, 0.5) !important;
+    border: none;
+    color: #000000;
+    border-radius: 0px !important;
+}
+
+/* BIGGEST HEADER ("Shark"'s DEN) */
+h1 {
+    color: #000000;
+    font-size: 90px;
+    text-align: center;
+    font-family: 'God of War';
+}
+
+/* MEDIUM HEADER */
+h2 {
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* SMALL HEADER */
+h3 {
+    color: #000000 !important;
+    font-size: 14px !important;
+}
+
+/* RIGHT SIDE PANEL HEADER */
+.sidebar h3 {
+    color: #000000 !important;
+    font-size: 26px !important;
+    font-family: 'FONT NAME'; /* Replace with actual font if needed */
+}
+
+/* RIGHT SIDE PANELS */
+.panel {
+    background: rgba(1, 1, 1, 0.5) !important;
+    box-shadow: none !important;
+    border: none !important;
+    color: #000000 !important;
+    border-radius: 0px;
+}
+
+/* ENERGY BAR BACKGROUND */
+.progress {
+    background: rgba(1, 1, 1, 0.5);
+    color: #000000 !important;
+    border-radius: 0px !important;
+}
+
+/* ENERGY BAR COLOR */
+.progress-bar {
+    background: rgba(1, 1, 1, 0.5);
+    color: #000000 !important;
+    border-radius: 0px !important;
+}
+
+/* ENERGY BAR TEXT */
+.progress div {
+    color: #000000 !important;
+}
+
+/* CHAT */
+.s-chat-message:nth-child(even) /* Even Numbered Messages */ {
+    background: rgba(1, 1, 1, 0.5) !important;
+    color: #000000 !important;
+    border: none !important;
+}
+
+.s-chat-message:nth-child(odd) /* Odd Numbered Messages */ {
+    background: rgba(1, 1, 1, 0.5) !important;
+    color: #000000 !important;
+    border: none !important;
+}
+
+.s-chat-message__pinned /* Pinned Message */ {
+    background: rgba(1, 1, 1, 0.5) !important;
+    color: #000000 !important;
+    border: none !important;
+}
+
+.s-chat-message_timestamp /* Timestamps */ {
+    color: #000000 !important;
+}
+
+div#chatMessageContainer {
+    border: none !important;
+}
+
+button#label_currentChannel /* Channel Button ie. Main, Sales */ {
+    background: rgba(1, 1, 1, 0.5) !important;
+    color: #000000 !important;
+    border: none !important;
+}
+
+/* LION INFO TABLE (Level, Stats, Territory Count, Etc.) */
+
+/* PANEL BACKGROUND COLOR */
+.table {
+    background: rgba(1, 1, 1, 0.5);
+    border: none !important;
+    border-collapse: separate;
+    border-radius: 0px;
+}
+
+/* HEADERS COLOR (King Name + Title, "There are _ lions with mutations in _'s pride.") */
+.top,
+.bottom,
+th {
+    background: rgba(1, 1, 1, 0.5) !important;
+    color: #000000 !important;
+    border-radius: 0px;
+}
+
+td.bottom a {
+    text-decoration: none !important;
+}
+
+/* Color behind "Level, Stats, Branch, Territory" etc. */
+.inner-table .left {
+    background: rgba(155, 226, 242, 0.6) !important;
+    color: #2e2a2b;
+    border-radius: 0px;
+}
+
+/* Color behind the number of all of the things above */
+.inner-table .right {
+    background: none;
+    border-radius: 0px !important;
+}
+
+td.right {
+    border-radius: 0px !important;
+}
+
+/* IGNORE */
+.right_odd {
+    background: none !important;
+}
+
+/* Affects the color behind "_ Unsorted", "_ Pregnant Lionesses", "View Pride Overview", and cave/mound names */
 .cave-grid,
 .mound-grid {
-    background: rgba(10, 10, 10, 0.85) !important;
+    background: rgba(1, 1, 1, 0.5);
     border: none !important;
     border-radius: 0px !important;
-    box-shadow: none !important;
-    color: #d8d6d2 !important;
 }
 
-
-/* NAVBAR TEXT */
-
-.navbar li a {
-    color: #b3002d !important;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+/* FEED ALL, PLAY ALL */
+.feature {
+    background: rgba(1, 1, 1, 0.5) !important;
+    color: #000000 !important;
+    border: 1px solid #000000 !important;
+    border-radius: 0px !important;
 }
 
-.navbar li a:hover {
-    background: rgba(40, 0, 10, 0.8) !important;
-    color: #ffffff !important;
+/* "King Dynasty, Pride Dynasty, Achievements, Showcase" Panels */
+.feature,
+div.left {
+    background: rgba(1, 1, 1, 0.5);
+    border: none;
+    border-radius: 0px !important;
 }
 
-
-/* HEADERS */
-
-h1 {
-    font-size: 70px;
-    text-align: center;
-    color: #b3002d;
-    text-shadow: 0 0 10px #40000a;
+/* Block of color behind "Territory Description, Player Name, Avatar URL" etc. */
+.table .left {
+    background: rgba(1, 1, 1, 0.5);
+    border-radius: 0px;
 }
 
-h2 {
-    text-align: center;
-    color: #a10026;
-}
-
-h3 {
-    color: #c2bfb8 !important;
-}
-
-
-/* LINKS */
-
-a:link,
-a:visited {
-    color: #b3002d !important;
-}
-
-a:hover {
-    color: #ffffff !important;
-    text-shadow: 0 0 6px #b3002d;
-}
-
-
-/* INNER TABLE LABELS (Level, Stats, etc.) */
-
-.inner-table .left {
-    background: rgba(60, 0, 15, 0.8) !important;
-    color: #ffffff !important;
-}
-
-.inner-table .right {
-    background: rgba(20, 20, 20, 0.6) !important;
-}
-
-
-/* ENERGY BAR */
-
-.progress {
-    background: #1a0005 !important;
-}
-
-.progress-bar {
-    background: #8b0000 !important;
-}
-
-
-/* INPUT FIELDS */
-
+/* Color behind the content of the elements listed above */
 input,
 select,
 textarea {
-    background: rgba(20, 20, 20, 0.9) !important;
-    border: 1px solid #600015 !important;
-    color: #d8d6d2 !important;
+    background: rgba(1, 1, 1, 0.5) !important;
+    border: none !important;
+    border-radius: 0px !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
 }
 
-
-/* BUTTONS */
-
-button.button,
-input.floatright {
-    background: #1a0005 !important;
-    border: 1px solid #8b0000 !important;
-    color: #d8d6d2 !important;
+/* ACCOUNT OPTIONS PANELS  (Friend Requests Toggles, etc.) */
+.item-header {
+    background: rgba(1, 1, 1, 0.5) !important;
+    color: #000000  !important;
+    border-radius: 0px !important;
 }
 
-button.button:hover,
-input.floatright:hover {
-    background: #40000a !important;
+.item {
+    background: rgba(1, 1, 1, 0.5) !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+/* ACCOUNT OPTIONS ON/OFF TOGGLE SWITCH */
+div.slider.round /* Background */ {
+    background: #000000 !important;
+}
+
+div.slider.round::before /* Circle Part */ {
+    background: #000000 !important;
+}
+
+/* Copyright, Terms of Service, CoC, etc. */
+div.container.footer.center.white.visible-lg.visible-md.visible-sm, div.container.footer.center.white.visible-lg.visible-md.visible-sm a {
+    color: #000000 !important;
+    text-shadow: none !important;
+}
+
+/* LINK COLOR */
+a:link,
+a:visited {
     color: #ffffff !important;
 }
 
-
-/* CUSTOM CONTENT BOXES */
-
-.boxcontainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+/* LINK HOVER COLOR */
+a:hover {
+    color: #ffffff !important;
 }
 
-.smallbox,
-.mediumbox,
-.largebox {
-    background: rgba(15, 15, 15, 0.9);
-    border: 1px solid #600015;
-    color: #d8d6d2;
-    padding: 15px;
+/* BOX CONTAINER */
+.boxcontainer {
+    background: none;
+    height: auto;
+    padding: 0px;
+    justify-content: center;
+    display: flex;
+}
+
+/* BOXES */
+.smallbox {
+    float: left;
+    background: rgba(1, 1, 1, 0.5);
+    color: #000000;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
     margin: 10px;
+    height: 150px;
+    width: 28.4%;
     overflow: auto;
 }
 
-.smallbox { width: 28%; height: 160px; }
-.mediumbox { width: 45%; height: 160px; }
-.largebox { width: 90%; height: 160px; }
-
-
-/* HOVER BOXES */
-
-.smallhoverbox,
-.mediumhoverbox,
-.largehoverbox {
-    background: rgba(15, 15, 15, 0.9);
-    border: 1px solid #600015;
-    color: #d8d6d2;
-    padding: 15px;
+.mediumbox {
+    float: left;
+    background: rgba(1, 1, 1, 0.5);
+    color: #000000;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
     margin: 10px;
-    overflow: hidden;
-    transition: 0.5s ease;
+    height: 150px;
+    width: 43.8%;
+    overflow: auto;
 }
 
-.smallhoverbox { width: 28%; height: 50px; }
-.smallhoverbox:hover { height: 160px; }
+.largebox {
+    float: left;
+    background: rgba(1, 1, 1, 0.5);
+    color: #000000;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+    margin: 10px;
+    height: 150px;
+    width: 90%;
+    overflow: auto;
+}
 
-.mediumhoverbox { width: 45%; height: 50px; }
-.mediumhoverbox:hover { height: 160px; }
+/* HOVER BOXES */
+.smallhoverbox {
+    float: left;
+    background: rgba(1, 1, 1, 0.5);
+    color: #000000;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+    margin: 10px;
+    height: 50px;
+    width: 28.4%;
+    overflow: auto;
+    transition: 3s;
+}
 
-.largehoverbox { width: 90%; height: 50px; }
-.largehoverbox:hover { height: 160px; }
+.smallhoverbox:hover {
+    height: 150px;
+    width: 28.4%;
+}
 
+.mediumhoverbox {
+    float: left;
+    background: rgba(1, 1, 1, 0.5);
+    color: #000000;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+    margin: 10px;
+    height: 50px;
+    width: 43.8%;
+    overflow: auto;
+    transition: 3s;
+}
 
-/* SCROLLBAR */
+.mediumhoverbox:hover {
+    height: 150px;
+    width: 43.8%;
+}
 
+.largehoverbox {
+    float: left;
+    background: rgba(1, 1, 1, 0.5);
+    color: #000000;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+    margin: 10px;
+    height: 150px;
+    width: 90%;
+    overflow: auto;
+    transition: 3s;
+}
+
+.largehoverbox:hover {
+    height: 150px;
+    width: 90%;
+}
+
+/* SCROLL BAR */
+
+/* WIDTH */
 ::-webkit-scrollbar {
     width: 10px;
 }
 
+/* BACKGROUND */
 ::-webkit-scrollbar-track {
-    background: #0d0d0d;
+    background: #ffffff;
 }
 
+/* "THUMB" */
 ::-webkit-scrollbar-thumb {
-    background: #8b0000;
+    background: #000000;
+    border-radius: 0px;
 }
 
+/* LION AND USER AVATAR OPACITY */
+div#lion_image {
+    opacity: 1;
+}
 
-/* CIRCULAR LION + AVATAR */
+table#player img {
+    opacity: 1;
+}
 
-div#lion_image,
+/* CIRCULAR LION AND USER AVATAR */
+div#lion_image {
+    border-radius: 50% !important;
+    overflow: hidden;
+    margin-top: 15px; /* May need adjusting */
+    margin-left: 12px; /* May need adjusting */
+}
+
 table#player img {
     border-radius: 50% !important;
     overflow: hidden;
 }
 
-
-/* LOGO REPLACER */
-
-div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
-    content: url('LOGO IMAGE URL HERE');
+/* LIODEN LOGO REPLACER */
+div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
+    content: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d6c1114a-253a-46f4-a47d-91a17eac9a2c/dbdct2f-ca575d34-fe6a-4590-9c28-fd99b57b5932.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9kNmMxMTE0YS0yNTNhLTQ2ZjQtYTQ3ZC05MWExN2VhYzlhMmMvZGJkY3QyZi1jYTU3NWQzNC1mZTZhLTQ1OTAtOWMyOC1mZDk5YjU3YjU5MzIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.55GMrXZx-7noT9k3JLJBPCXiiS78iZQhS5oxQBRzTg0');
 }
 
-
-/* CAVE / MOUND IMAGE REPLACERS */
-
-div.cave-grid>img {
-    content: url('IMAGE URL HERE') !important;
+/* CAVE / MOUND IMAGES */
+div.cave-grid > img /* Pregnant Lionesses */ {
+    content: url('IMAGE URL') !important;
 }
 
-a[href$="CAVE ID"]>div.cave-grid>img {
-    content: url('IMAGE URL HERE') !important;
+a[href$="CAVE ID"] > div.cave-grid > img {
+    content: url('IMAGE URL') !important;
 }
 
-a[href$="lionoverview.php?id=PLAYER ID"]>div.cave-grid>img {
-    content: url('IMAGE URL HERE') !important;
+a[href$="lionoverview.php?id=PLAYER ID"] > div.cave-grid > img /* Pride Overview */ {
+    content: url('IMAGE URL') !important;
 }
 
-a[href$="unsorted.php?id=PLAYER ID"]>div.cave-grid>img {
-    content: url('IMAGE URL HERE') !important;
+a[href$="unsorted.php?id=PLAYER ID"] > div.cave-grid > img /* Unsorted */ {
+    content: url('IMAGE URL') !important;
 }
 
-.mound-grid img {
-    background: url("IMAGE URL HERE");
+.mound-grid img /* Mound(s) */ {
+    background: url("IMAGE URL");
     width: 0;
     height: 0;
     padding-top: 80px;
     padding-right: 130px;
 }
 
-
-/* CREDIT TEXT */
-
-.breadcrumb::after {
-    content: "Template by Katie (#106445) Coded by Matchbox (243004)";
-    color: #600015;
-    position: absolute;
-    right: 13%;
-    z-index: 100;
+/* MAKES BOXES/DESCRIPTION SHOW ON MOBILE */
+@media only screen and (max-width: 767px) {
+    .container.main .hidden-xs {
+        display: block !important;
+    }
 }
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    display: block !important;
+}
+
+@media only screen and (min-width: 1200px) {
+    div.quote {
+        width: 790px;
+    }
+}
+
+/* BUTTON TEXT REPLACEMENTS */
+/* Note: CSS alone cannot reliably change button text unless buttons have unique classes or IDs.
+   Replace selectors below with the actual classes from Lioden if possible. */
+
+/* Message Button -> Worship */
+button.message-btn::after {
+    content: "Worship";
+}
+
+/* Send Gift Button -> Offering */
+button.send-gift-btn::after {
+    content: "Offering";
+}
+
+/* Create Trade Button -> Barter */
+button.create-trade-btn::after {
+    content: "Barter";
+}
+
+/* Block Member Button -> Ignore */
+button.block-member-btn::after {
+    content: "Ignore";
+}
+
+/* Friend Request Button -> Request Alliance */
+button.friend-request-btn::after {
+    content: "Request Alliance";
+}
+
+/* View Wishlist -> Sharks Desire */
+a.view-wishlist-link::after {
+    content: "Sharks Desire";
+}
+
+/* Refer a Friend -> Recruit */
+a.refer-friend-link::after {
+    content: "Recruit";
+}
+
+/* Attack this Lion -> Try Your Luck */
+button
