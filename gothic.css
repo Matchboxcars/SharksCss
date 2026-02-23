@@ -33,6 +33,12 @@ body, .container.main {
     color: #eeeeee;
 }
 
+/* CIRCULAR LION AND AVATAR */
+div#lion_image, table#player img {
+    border-radius: 50% !important;
+    overflow: hidden;
+}
+
 /* CURSOR */
 body, button, input, textarea, select {
     cursor: url('https://www.cursor.cc/cursor/220/26/cursor.png'), auto;
