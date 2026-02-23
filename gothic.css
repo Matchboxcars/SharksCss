@@ -15,11 +15,11 @@
     border-radius: 0px;
 }
 .breadcrumb .active {
-    color: #000000;
+    color: #5d5555;
 }
 .breadcrumb::after {
     content: "Template by Katie (#106445) Coded by Matchbox (243004)";
-    color: #000000;
+    color: #5d5555;
     position: absolute;
     right: 13%;
     z-index: 100;
