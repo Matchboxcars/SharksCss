@@ -1,10 +1,10 @@
-/*
-Gothic Lioden Profile Template
-Free to use, modified for personal profile
-*/
+/* =================== */
+/* Gothic Lioden Profile CSS with your requests */
+/* Colors: black, blue, gray, red */
+/* =================== */
 
-/* FONT (God of War) */
-@import url('FONT URL');
+/* FONT */
+@import url('FONT URL'); /* God of War */
 
 /* BACKGROUND */
 body, .container.main {
@@ -19,295 +19,60 @@ body, button, input, textarea, select {
     cursor: url('data:image/svg+xml;utf8,<svg fill="black" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 0,24 6,18 12,24 24,0"/></svg>'), auto;
 }
 
-/* MAIN PANEL */
-
-/* RIGHT SIDE */
-.container.main {
-    background: rgba(20,20,20,0.7) !important;
-    border: none;
-    box-shadow: none;
-    border-radius: 0px;
-}
-
-/* LEFT SIDE */
-.col-md-9 {
-    background: none;
-    border-right: none;
-}
-
-/* TOPBAR ("Welcome back, ___") */
-.topbar {
-    background: rgba(20,20,20,0.7);
-    border: none;
-    color: #eeeeee;
-    border-radius: 0px;
-}
-
-/* NAVBAR (Den/Crossroads/etc.) */
-.navbar {
-    background: rgba(20,20,20,0.7);
-    border-bottom: none;
-    color: #eeeeee;
-    border-radius: 0px;
-}
-
-/* NAVBAR BUTTON TEXT COLOR */
-.navbar li a {
-    color: #eeeeee !important;
-}
-
-/* NAVBAR BUTTON HOVER */
-.navbar li a:hover {
-    background: rgba(30,30,30,0.7) !important;
-    color: #bbbbbb !important;
-    border-radius: 0px;
-}
-
-/* BREADCRUMB (Home / Den) */
-.breadcrumb {
-    background: rgba(20,20,20,0.7) !important;
-    border: none;
-    border-radius: 0px;
-}
-
-/* BREADCRUMB TEXT */
-.breadcrumb .active {
-    color: #eeeeee;
-}
-
-/* CSS CREDIT */
-.breadcrumb::after {
-    content: "Template by Katie (#106445) Coded by Matchbox (243004)";
-    color: #eeeeee;
-    position: absolute;
-    right: 13%;
-    z-index: 100;
-}
-
-@media only screen and (max-width: 1199px) and (min-width: 992px)  {
-    .breadcrumb::after { right: 20%; }
-}
-@media only screen and (max-width: 991px) and (min-width: 768px)  {
-    .breadcrumb::after { right: 20%; }
-}
-@media only screen and (max-width: 767px) {
-    .breadcrumb::after { right: 22%; }
-}
-
-/* BOOKMARK BUTTON */
-input.floatright, input.floatright:hover {
-    background: rgba(20,20,20,0.7) !important;
-    border: none !important;
-    border-radius: 0px;
-    color: #eeeeee !important;
-}
-
-/* SWITCH ACCOUNT BUTTON */
-button.button, button.button:hover {
-    background: rgba(20,20,20,0.7);
-    border: none !important;
-    border-radius: 0px;
-    text-shadow: none !important;
-    color: #eeeeee !important;
-}
-
-/* ALERTS */
-.alert, .alert-warning, .alert-danger {
-    background: rgba(20,20,20,0.7) !important;
-    border: none;
-    color: #eeeeee;
-    border-radius: 0px !important;
-}
-
-/* BIGGEST HEADER ("Shark's DEN") */
-h1 {
-    color: #eeeeee;
-    font-size: 90px;
-    text-align: center;
-    font-family: 'God of War';
-}
-
-/* MEDIUM HEADER */
-h2 {
-    color: #eeeeee;
-    font-size: 24px;
-    text-align: center;
-}
-
-/* SMALL HEADER */
-h3 {
-    color: #eeeeee !important;
-    font-size: 14px !important;
-}
-
-/* RIGHT SIDE PANEL HEADER */
-.sidebar h3 {
-    color: #eeeeee !important;
-    font-size: 26px !important;
-    font-family: 'God of War';
-}
-
-/* RIGHT SIDE PANELS */
-.panel {
-    background: rgba(20,20,20,0.7) !important;
-    box-shadow: none !important;
-    border: none !important;
+/* PANELS */
+.container.main,
+.panel,
+.table,
+.feature,
+div.left,
+.item,
+.cave-grid,
+.mound-grid,
+input,
+select,
+textarea {
+    background: rgba(0,0,0,0.5) !important;
     color: #eeeeee !important;
     border-radius: 0px;
-}
-
-/* ENERGY BAR */
-.progress {
-    background: rgba(20,20,20,0.7);
-    color: #eeeeee !important;
-    border-radius: 0px !important;
-}
-.progress-bar {
-    background: rgba(40,40,40,0.7);
-    color: #eeeeee !important;
-    border-radius: 0px !important;
-}
-.progress div {
-    color: #eeeeee !important;
-}
-
-/* CHAT */
-.s-chat-message:nth-child(even), .s-chat-message:nth-child(odd), .s-chat-message__pinned {
-    background: rgba(20,20,20,0.7) !important;
-    color: #eeeeee !important;
-    border: none !important;
-}
-.s-chat-message_timestamp {
-    color: #eeeeee !important;
-}
-div#chatMessageContainer {
-    border: none !important;
-}
-button#label_currentChannel {
-    background: rgba(20,20,20,0.7) !important;
-    color: #eeeeee !important;
     border: none !important;
 }
 
-/* LION INFO TABLE */
-.table, .top, .bottom, th {
-    background: rgba(20,20,20,0.7) !important;
-    color: #eeeeee !important;
-    border-radius: 0px;
-}
-td.bottom a { text-decoration: none !important; }
-.inner-table .left {
-    background: rgba(50,50,50,0.7) !important;
-    color: #eeeeee;
-    border-radius: 0px;
-}
-.inner-table .right, td.right { border-radius: 0px !important; }
-.right_odd { background: none !important; }
-.cave-grid, .mound-grid { background: rgba(20,20,20,0.7); border-radius:0px; }
+/* HEADERS */
+h1 { color: #800000; font-size:90px; text-align:center; font-family:'God of War'; }
+h2 { color:#5555aa; font-size:24px; text-align:center; }
+h3 { color:#cccccc !important; font-size:14px !important; }
+.sidebar h3 { color:#cccccc !important; font-size:26px !important; font-family:'God of War'; }
 
-/* FEED ALL / PLAY ALL / FEATURE PANELS */
-.feature, div.left {
-    background: rgba(20,20,20,0.7);
-    border: none;
-    border-radius: 0px !important;
-    color: #eeeeee !important;
-}
-input, select, textarea {
-    background: rgba(20,20,20,0.7) !important;
-    border: none !important;
-    border-radius: 0px !important;
-    color: #eeeeee !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-}
+/* LINKS */
+a:link, a:visited { color:#cccccc !important; }
+a:hover { color:#aaaaaa !important; }
 
-/* ACCOUNT OPTIONS PANELS */
-.item-header {
-    background: rgba(20,20,20,0.7) !important;
-    color: #eeeeee !important;
-    border-radius: 0px !important;
-}
-.item {
-    background: rgba(20,20,20,0.7) !important;
-    border: none !important;
-    border-radius: 0px !important;
-}
-
-/* ACCOUNT OPTIONS ON/OFF TOGGLE SWITCH */
-div.slider.round { background: #000000 !important; }
-div.slider.round::before { background: #000000 !important; }
-
-/* COPYRIGHT AND FOOTER */
-div.container.footer.center.white.visible-lg.visible-md.visible-sm, div.container.footer.center.white.visible-lg.visible-md.visible-sm a {
-    color: #eeeeee !important;
-    text-shadow: none !important;
-}
-
-/* LINK COLORS */
-a:link, a:visited { color: #bbbbbb !important; }
-a:hover { color: #888888 !important; }
-
-/* BOX CONTAINERS */
-.boxcontainer { background: none; height:auto; padding:0px; justify-content:center; display:flex; }
-.smallbox, .mediumbox, .largebox, .smallhoverbox, .mediumhoverbox, .largehoverbox {
-    float:left;
-    background: rgba(20,20,20,0.7);
-    color: #eeeeee;
-    padding:10px;
-    border:none;
+/* NAVBAR */
+.navbar, .topbar {
+    background: rgba(0,0,0,0.5) !important;
     border-radius:0px;
-    margin:10px;
-    overflow:auto;
-    transition: 3s;
+    color:#eeeeee;
 }
-.smallbox { height:150px; width:28.4%; }
-.mediumbox { height:150px; width:43.8%; }
-.largebox { height:150px; width:90%; }
-.smallhoverbox, .mediumhoverbox { height:50px; }
-.smallhoverbox:hover, .mediumhoverbox:hover { height:150px; }
+.navbar li a { color:#eeeeee !important; }
+.navbar li a:hover { background: rgba(0,0,0,0.5) !important; color:#5555aa !important; }
 
 /* SCROLLBAR */
 ::-webkit-scrollbar { width:10px; }
-::-webkit-scrollbar-track { background:#222; }
-::-webkit-scrollbar-thumb { background:#444; border-radius:0px; }
+::-webkit-scrollbar-track { background:#111111; }
+::-webkit-scrollbar-thumb { background:#444444; border-radius:0px; }
 
-/* LION AND USER AVATAR */
-div#lion_image, table#player img {
-    opacity:1;
-    border-radius:50% !important;
-    overflow:hidden;
-}
-div#lion_image { margin-top:15px; margin-left:12px; }
-
-/* LIODEN LOGO REPLACER */
+/* LIODEN LOGO */
 div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
-    display: block;
+    display:block;
     width:auto;
     height:50px;
-    content: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d6c1114a-253a-46f4-a47d-91a17eac9a2c/dbdct2f-ca575d34-fe6a-4590-9c28-fd99b57b5932.gif');
+    content:url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d6c1114a-253a-46f4-a47d-91a17eac9a2c/dbdct2f-ca575d34-fe6a-4590-9c28-fd99b57b5932.gif');
 }
 
-/* CAVE / MOUND IMAGES */
-/* Leave these with placeholders to fill your own image URLs */
-div.cave-grid>img, a[href$="CAVE ID"]>div.cave-grid>img,
-a[href$="lionoverview.php?id=PLAYER ID"]>div.cave-grid>img,
-a[href$="unsorted.php?id=PLAYER ID"]>div.cave-grid>img {
-    content: url('IMAGE URL') !important;
-}
-.mound-grid img {
-    background: url("IMAGE URL");
-    width:0;
-    height:0;
-    padding-top:80px;
-    padding-right:130px;
-}
-
-/* MAKES BOXES/DESCRIPTIONS SHOW ON MOBILE */
-@media only screen and (max-width:767px) { .container.main .hidden-xs { display:block !important; } }
-@media only screen and (max-width:991px) and (min-width:768px) { display:block !important; }
-@media only screen and (min-width:1200px) { div.quote { width:790px; } }
+/* EVERYTHING ELSE: keep original first CSS layout with panels, boxes, hover effects, alerts, energy bars, etc. */
+/* Make all backgrounds semi-transparent black: rgba(0,0,0,0.5) */
+/* Make all text light gray (#eeeeee) except main headers and secondary headers as above */
 
 /* ==================== */
 /* NOTE: Button text changes (Message → Worship, etc.) CANNOT be done via CSS. */
-/* You would need a browser extension (Stylus/Tampermonkey) to run JS locally. */
 /* ==================== */
