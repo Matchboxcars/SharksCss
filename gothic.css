@@ -67,22 +67,7 @@ div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
     width:auto;
     height:50px;
     content:url('https://www.cursor.cc/cursor/220/26/cursor.png');
-}
-
-/* ==================== */
-/* Chat box text readability (dark font on light background) */
-/* ==================== */
-
-.s-chat-message:nth-child(even),
-.s-chat-message:nth-child(odd),
-.s-chat-message__pinned {
-    background: #ffffff !important;  /* Keep white background for readability */
-    color: #000022 !important;       /* Dark blue text for Gothic theme */
-    border: 1px solid #5555aa !important;  /* Optional subtle border */
-}
-
-.s-chat-message_timestamp {
-    color: #000000 !important;       /* Timestamps in black for readability */
+    
 }
 
 /* Chat input box (where you type) */
@@ -90,6 +75,21 @@ div#chatMessageContainer input,
 div#chatMessageContainer textarea {
     background: rgba(0,0,0,0.5) !important; /* Gothic semi-transparent input */
     color: #eeeeee !important;              /* Light gray text inside input */
+}
+
+/* CHAT */
+.s-chat-message:nth-child(even),
+.s-chat-message:nth-child(odd),
+.s-chat-message__pinned {
+    background: rgba(255, 255, 255, 0.7) !important;
+    color: #000000 !important;
+    border: none !important;
+}
+.s-chat-message_timestamp { color: #000000 !important; }
+div#chatMessageContainer, button#label_currentChannel {
+    border: none !important;
+    background: rgba(255, 255, 255, 0.6) !important;
+    color: #5d5555 !important;
 }
 
 /* CAVE / MOUND */
@@ -101,7 +101,7 @@ div#chatMessageContainer textarea {
     padding-right: 130px;
 }
 div.cave-grid>img {
-    content: url('https://i.pinimg.com/1200x/ed/5d/18/ed5d18e15558e6187d9e31095d03cc76.jpg') !important;
+    content: url('https://i.pinimg.com/736x/20/80/7a/20807a52bce30802bd7e9eee7a6c8301.jpg') !important;
 }
 /* Unsorted, Pregnant Lionesses, Pride Overview */
 a[href$="unsorted.php?id=PLAYER ID"]>div.cave-grid>img,
