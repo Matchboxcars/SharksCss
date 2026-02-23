@@ -177,7 +177,7 @@ div#lion_image { margin-top:15px; margin-left:12px; }
 
 /* LIODEN LOGO REPLACER */
 div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
-    content:url('https://th.bing.com/th/id/R.dee4bf3dbddfde6710776af78fba840d?rik=lNza%2bmqy2cNKzA&pid=ImgRaw&r=0');
+    content:url('LOGO REPLACEMENT');
 }
 
 /* CAVE / MOUND IMAGES - placeholders */
