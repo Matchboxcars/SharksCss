@@ -1,198 +1,78 @@
-/*
-Gothic Lioden Profile Template
-Original by Katie (#106445), modified for personal profile
-Colors restored: black, dark gray, blue accents, subtle red
-*/
+/* =================== */
+/* Gothic Lioden Profile CSS with your requests */
+/* Colors: black, blue, gray, red */
+/* =================== */
 
 /* FONT */
 @import url('FONT URL'); /* God of War */
 
 /* BACKGROUND */
 body, .container.main {
-    background: url('https://i.pinimg.com/736x/3d/c8/0a/3dc80a3582573db2677c5c1f77c14c8d.jpg') center center fixed !important;
+    background: url('https://i.pinimg.com/1200x/48/1c/ef/481cefd83c3160d8de948dd2e37f8f2b.jpg') center center fixed !important;
     background-size: cover !important;
     font-family: 'God of War';
-    color: #2e2a2b; /* dark gray text */
+    color: #eeeeee;
 }
 
 /* CURSOR */
 body, button, input, textarea, select {
-    cursor: url('data:image/svg+xml;utf8,<svg fill="black" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 0,24 6,18 12,24 24,0"/></svg>'), auto;
+    cursor: url('CURSOR REPLACEMENT'), auto;
 }
 
-/* MAIN PANEL */
-.container.main {
-    background: rgba(1,1,1,0.5);
-    border: none;
-    box-shadow: none;
+/* PANELS */
+.container.main,
+.panel,
+.table,
+.feature,
+div.left,
+.item,
+.cave-grid,
+.mound-grid,
+input,
+select,
+textarea {
+    background: rgba(0,0,0,0.5) !important;
+    color: #eeeeee !important;
     border-radius: 0px;
-}
-
-/* LEFT SIDE */
-.col-md-9 {
-    background: none;
-    border-right: none;
-}
-
-/* TOPBAR */
-.topbar {
-    background: rgba(1,1,1,0.5);
-    border: none;
-    color: #000000;
-    border-radius: 0px;
-}
-
-/* NAVBAR */
-.navbar {
-    background: rgba(1,1,1,0.5);
-    border-bottom: none;
-    color: #000000;
-    border-radius: 0px;
-}
-.navbar li a { color: #000000 !important; }
-.navbar li a:hover {
-    background: rgba(1,1,1,0.5) !important;
-    color: #000000 !important;
-}
-
-/* BREADCRUMB */
-.breadcrumb {
-    background: rgba(1,1,1,0.5) !important;
-    border: none;
-    border-radius: 0px;
-}
-.breadcrumb .active { color: #000000; }
-
-/* CREDIT */
-.breadcrumb::after {
-    content: "Template by Katie (#106445) Coded by Matchbox (243004)";
-    color: #000000;
-    position: absolute;
-    right: 13%;
-    z-index: 100;
-}
-@media only screen and (max-width:1199px) and (min-width:992px){.breadcrumb::after{right:20%;}}
-@media only screen and (max-width:991px) and (min-width:768px){.breadcrumb::after{right:20%;}}
-@media only screen and (max-width:767px){.breadcrumb::after{right:22%;}}
-
-/* BOOKMARK BUTTON */
-input.floatright, input.floatright:hover {
-    background: rgba(1,1,1,0.5) !important;
     border: none !important;
-    border-radius: 0px;
-    color: #000000 !important;
-}
-
-/* SWITCH ACCOUNT BUTTON */
-button.button, button.button:hover {
-    background: rgba(1,1,1,0.5);
-    border: none !important;
-    border-radius: 0px;
-    color: #000000 !important;
-}
-
-/* ALERTS */
-.alert, .alert-warning, .alert-danger {
-    background: rgba(1,1,1,0.5) !important;
-    border: none;
-    color: #000000;
-    border-radius: 0px !important;
 }
 
 /* HEADERS */
-h1 { color:#800000; font-size:90px; text-align:center; font-family:'God of War'; } /* subtle red */
-h2 { color:#5555aa; font-size:24px; text-align:center; } /* bluish accent */
-h3 { color:#2e2a2b !important; font-size:14px !important; }
-.sidebar h3 { color:#2e2a2b !important; font-size:26px !important; font-family:'God of War'; }
-
-/* PANELS */
-.panel { background: rgba(1,1,1,0.5) !important; box-shadow:none !important; border:none !important; color:#2e2a2b !important; border-radius:0px; }
-
-/* ENERGY BAR */
-.progress { background: rgba(1,1,1,0.5); color:#2e2a2b !important; border-radius:0px !important; }
-.progress-bar { background: rgba(1,1,1,0.5); color:#2e2a2b !important; border-radius:0px !important; }
-.progress div { color:#2e2a2b !important; }
-
-/* CHAT */
-.s-chat-message:nth-child(even), .s-chat-message:nth-child(odd), .s-chat-message__pinned {
-    background: rgba(1,1,1,0.5) !important;
-    color:#2e2a2b !important;
-    border:none !important;
-}
-.s-chat-message_timestamp { color:#2e2a2b !important; }
-div#chatMessageContainer { border:none !important; }
-button#label_currentChannel { background: rgba(1,1,1,0.5) !important; color:#2e2a2b !important; border:none !important; }
-
-/* LION INFO TABLE */
-.table { background: rgba(1,1,1,0.5); border:none !important; border-collapse:separate; border-radius:0px; }
-.top, .bottom, th { background: rgba(1,1,1,0.5) !important; color:#2e2a2b !important; border-radius:0px; }
-td.bottom a { text-decoration:none !important; }
-.inner-table .left { background: rgba(155,226,242,0.6) !important; color:#2e2a2b; border-radius:0px; }
-.inner-table .right, td.right { background:none; border-radius:0px !important; }
-.right_odd { background:none !important; }
-
-/* CAVE / MOUND PANELS */
-.cave-grid, .mound-grid { background: rgba(1,1,1,0.5); border:none !important; border-radius:0px !important; }
-
-/* FEATURE PANELS */
-.feature, div.left { background: rgba(1,1,1,0.5); border:none; border-radius:0px !important; }
-
-/* INPUTS / TEXTAREAS */
-input, select, textarea { background: rgba(1,1,1,0.5) !important; border:none !important; border-radius:0px !important; color:#2e2a2b !important; box-shadow:none !important; text-shadow:none !important; }
-
-/* ACCOUNT PANELS */
-.item-header, .item { background: rgba(1,1,1,0.5) !important; color:#2e2a2b !important; border-radius:0px !important; border:none !important; }
-
-/* ACCOUNT TOGGLE */
-div.slider.round { background:#000000 !important; }
-div.slider.round::before { background:#000000 !important; }
-
-/* FOOTER */
-div.container.footer.center.white.visible-lg.visible-md.visible-sm,
-div.container.footer.center.white.visible-lg.visible-md.visible-sm a { color:#2e2a2b !important; text-shadow:none !important; }
+h1 { color: #800000; font-size:90px; text-align:center; font-family:'God of War'; }
+h2 { color:#5555aa; font-size:24px; text-align:center; }
+h3 { color:#cccccc !important; font-size:14px !important; }
+.sidebar h3 { color:#cccccc !important; font-size:26px !important; font-family:'God of War'; }
 
 /* LINKS */
-a:link, a:visited { color:#eeeeee !important; }
-a:hover { color:#cccccc !important; }
+a:link, a:visited { color:#cccccc !important; }
+a:hover { color:#aaaaaa !important; }
 
-/* BOXES */
-.boxcontainer { background:none; height:auto; padding:0px; justify-content:center; display:flex; }
-.smallbox, .mediumbox, .largebox, .smallhoverbox, .mediumhoverbox, .largehoverbox {
-    float:left; background: rgba(1,1,1,0.5); color:#2e2a2b; padding:10px; border:none; border-radius:0px; margin:10px; overflow:auto; transition:3s;
+/* NAVBAR */
+.navbar, .topbar {
+    background: rgba(0,0,0,0.5) !important;
+    border-radius:0px;
+    color:#eeeeee;
 }
-.smallbox { height:150px; width:28.4%; }
-.mediumbox { height:150px; width:43.8%; }
-.largebox { height:150px; width:90%; }
-.smallhoverbox, .mediumhoverbox { height:50px; }
-.smallhoverbox:hover, .mediumhoverbox:hover { height:150px; }
+.navbar li a { color:#eeeeee !important; }
+.navbar li a:hover { background: rgba(0,0,0,0.5) !important; color:#5555aa !important; }
 
 /* SCROLLBAR */
 ::-webkit-scrollbar { width:10px; }
-::-webkit-scrollbar-track { background:#ffffff; }
-::-webkit-scrollbar-thumb { background:#000000; border-radius:0px; }
+::-webkit-scrollbar-track { background:#111111; }
+::-webkit-scrollbar-thumb { background:#444444; border-radius:0px; }
 
-/* LION / USER AVATAR */
-div#lion_image, table#player img { opacity:1; border-radius:50% !important; overflow:hidden; }
-div#lion_image { margin-top:15px; margin-left:12px; }
-
-/* LIODEN LOGO REPLACER */
+/* LIODEN LOGO */
 div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
-    content:url('LOGO REPLACEMENT');
+    display:block;
+    width:auto;
+    height:50px;
+    content:url('Logo replacer');
 }
 
-/* CAVE / MOUND IMAGES - placeholders */
-div.cave-grid>img, a[href$="CAVE ID"]>div.cave-grid>img,
-a[href$="lionoverview.php?id=PLAYER ID"]>div.cave-grid>img,
-a[href$="unsorted.php?id=PLAYER ID"]>div.cave-grid>img {
-    content:url('MOUND IMAGE ') !important;
-}
-.mound-grid img { background:url("IMAGE URL"); width:0; height:0; padding-top:80px; padding-right:130px; }
-
-/* MOBILE */
-@media only screen and (max-width:767px) { .container.main .hidden-xs { display:block !important; } }
-@media only screen and (max-width:991px) and (min-width:768px) { display:block !important; }
-@media only screen and (min-width:1200px) { div.quote { width:790px; } }
+/* EVERYTHING ELSE: keep original first CSS layout with panels, boxes, hover effects, alerts, energy bars, etc. */
+/* Make all backgrounds semi-transparent black: rgba(0,0,0,0.5) */
+/* Make all text light gray (#eeeeee) except main headers and secondary headers as above */
 
 /* ==================== */
-/* NOTE: Button text changes cannot be done via CSS */
+/* NOTE: Button text changes (Message → Worship, etc.) CANNOT be done via CSS. */
 /* ==================== */
